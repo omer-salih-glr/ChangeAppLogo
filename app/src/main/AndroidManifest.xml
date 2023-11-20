@@ -16,6 +16,7 @@
         <activity
             android:name=".MainActivity"
             android:exported="false"/>
+
         <activity-alias
             android:name=".OneLauncherAlias"
             android:enabled="true"
@@ -29,6 +30,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity-alias>
+
         <activity-alias
             android:name=".TwoLauncherAlias"
             android:enabled="false"
@@ -42,6 +44,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity-alias>
+
         <activity-alias
             android:name=".ThreeLauncherAlias"
             android:enabled="false"
@@ -56,10 +59,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity-alias>
-
-
-
-
 
     </application>
 
