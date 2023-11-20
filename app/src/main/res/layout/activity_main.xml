@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/firstLauncher"
+            android:layout_width="match_parent"
+            android:layout_marginHorizontal="20dp"
+            android:layout_height="wrap_content"
+            android:text="First Logo"
+            app:backgroundTint="@null"
+            android:backgroundTint="@color/blue"
+            app:strokeColor="@color/blue"
+            android:textAllCaps="false"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="80dp"
+            android:textSize="17sp"
+            android:insetTop="0dp"
+            android:layout_marginTop="24dp"
+            android:insetBottom="0dp"
+            app:cornerRadius="8sp"/>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/secondLauncher"
+            android:layout_width="match_parent"
+            android:layout_marginHorizontal="20dp"
+            android:layout_height="wrap_content"
+            android:text="Second Logo"
+            app:backgroundTint="@null"
+            android:backgroundTint="@color/blue"
+            app:strokeColor="@color/blue"
+            android:textAllCaps="false"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="80dp"
+            android:textSize="17sp"
+            android:insetTop="0dp"
+            android:layout_marginTop="24dp"
+            android:insetBottom="0dp"
+            app:cornerRadius="8sp"/>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/thirdLauncher"
+            android:layout_width="match_parent"
+            android:layout_marginHorizontal="20dp"
+            android:layout_height="wrap_content"
+            android:text="Third Logo"
+            app:backgroundTint="@null"
+            android:backgroundTint="@color/blue"
+            app:strokeColor="@color/blue"
+            android:textAllCaps="false"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="80dp"
+            android:textSize="17sp"
+            android:insetTop="0dp"
+            android:layout_marginTop="24dp"
+            android:insetBottom="0dp"
+            app:cornerRadius="8sp"/>
+    </LinearLayout>
+
+
+
+
+
+</FrameLayout>

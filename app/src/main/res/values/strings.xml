@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">ChangeAppLogo</string>
+    <string name="firstLauncher">First Launcher</string>
+    <string name="secondLauncher">Second Launcher</string>
+    <string name="thirdLauncher">Thrid Launcher</string>
+</resources>
