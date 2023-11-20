@@ -24,6 +24,11 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
 
+        setOnclicklistener()
+        setContentView(binding.root)
+    }
+
+    private fun setOnclicklistener() {
         binding.firstLauncher.setOnClickListener {
             changeIcon(0)
         }
@@ -33,7 +38,6 @@ class MainActivity : AppCompatActivity() {
         binding.thirdLauncher.setOnClickListener {
             changeIcon(2)
         }
-        setContentView(binding.root)
     }
 
     private fun changeIcon(iconNumber: Int) {
@@ -42,22 +46,17 @@ class MainActivity : AppCompatActivity() {
                 packageManager.setComponentEnabledSetting(ComponentName(this@MainActivity, "com.app.changeapplogo.OneLauncherAlias"), PackageManager.COMPONENT_ENABLED_STATE_ENABLED, PackageManager.DONT_KILL_APP)
                 packageManager.setComponentEnabledSetting(ComponentName(this@MainActivity, "com.app.changeapplogo.TwoLauncherAlias"), PackageManager.COMPONENT_ENABLED_STATE_DISABLED, PackageManager.DONT_KILL_APP)
                 packageManager.setComponentEnabledSetting(ComponentName(this@MainActivity, "com.app.changeapplogo.ThreeLauncherAlias"), PackageManager.COMPONENT_ENABLED_STATE_DISABLED, PackageManager.DONT_KILL_APP)
-
             }
-
             1 -> {
                 packageManager.setComponentEnabledSetting(ComponentName(this@MainActivity, "com.app.changeapplogo.TwoLauncherAlias"), PackageManager.COMPONENT_ENABLED_STATE_ENABLED, PackageManager.DONT_KILL_APP)
                 packageManager.setComponentEnabledSetting(ComponentName(this@MainActivity, "com.app.changeapplogo.OneLauncherAlias"), PackageManager.COMPONENT_ENABLED_STATE_DISABLED, PackageManager.DONT_KILL_APP)
                 packageManager.setComponentEnabledSetting(ComponentName(this@MainActivity, "com.app.changeapplogo.ThreeLauncherAlias"), PackageManager.COMPONENT_ENABLED_STATE_DISABLED, PackageManager.DONT_KILL_APP)
-
             }
-
             2 -> {
                 packageManager.setComponentEnabledSetting(ComponentName(this@MainActivity, "com.app.changeapplogo.ThreeLauncherAlias"), PackageManager.COMPONENT_ENABLED_STATE_ENABLED, PackageManager.DONT_KILL_APP)
                 packageManager.setComponentEnabledSetting(ComponentName(this@MainActivity, "com.app.changeapplogo.OneLauncherAlias"), PackageManager.COMPONENT_ENABLED_STATE_DISABLED, PackageManager.DONT_KILL_APP)
                 packageManager.setComponentEnabledSetting(ComponentName(this@MainActivity, "com.app.changeapplogo.TwoLauncherAlias"), PackageManager.COMPONENT_ENABLED_STATE_DISABLED, PackageManager.DONT_KILL_APP)
             }
         }
-
     }
 }

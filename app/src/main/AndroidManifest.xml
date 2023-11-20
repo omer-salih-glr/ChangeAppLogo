@@ -21,7 +21,7 @@
             android:enabled="true"
             android:exported="true"
             android:icon="@mipmap/ic_launcher_one_launcher"
-            android:label="@string/app_name"
+            android:labeDl="@string/app_name"
             android:targetActivity=".MainActivity"
             tools:ignore="IntentFilterExportedReceiver">
             <intent-filter>
